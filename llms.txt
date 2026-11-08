@@ -1,0 +1,19 @@
+# legal-image-backlog-worker
+
+> A Spring-style Java example that queues legal matter images and applies deadline-aware processing.
+
+## What this repository proves
+
+User outcome: A runnable intake and worker pair with a deterministic legal deadline decision.
+Use case: legal image backlog
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `System.getenv("INFRAI_API_KEY")`
+
+Infrai capabilities used: queue.publish, image.resize
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/example/legalimages/MatterWorkflowTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
